@@ -1,8 +1,16 @@
+:root {
+  --lavender: #C8A2C8;
+  --light-red: #FF6B6B;
+  --icon-hover: var(--light-red);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: var(--lavender); /* lavender background */
+  color: #333;
 }
 
 .logo {
@@ -12,7 +20,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--light-red));
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -35,8 +43,112 @@
 
 .card {
   padding: 2em;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .read-the-docs {
   color: #888;
 }
+
+/* === ICON HOVER STYLES === */
+.icons a {
+  color: #999; /* default gray */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icons a:hover {
+  color: var(--icon-hover); /* light red hover */
+  transform: scale(1.2);
+}
+
+/* Optional: specific brand hover colors */
+.icons a.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.icons a.fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.icons a.fa-github:hover {
+  color: #333;
+}
+
+.icons a.fa-dribbble:hover {
+  color: #ea4c89;
+}
+
+.icons a.fa-envelope:hover {
+  color: var(--light-red); /* email hover matches light red */
+}
+
+:root {
+  --lavender: #C8A2C8;
+  --light-red: #FF6B6B;
+  --section-bg: #F3E6F3;
+}
+
+/* Glitter background overlay */
+.glitter {
+  position: relative;
+  overflow: hidden;
+}
+
+.glitter::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 80%);
+  opacity: 0.5;
+  animation: glitterMove 2s infinite linear;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes glitterMove {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(100px, 100px) rotate(360deg); }
+}
+
+/* Glittery text headings */
+.glitter-text {
+  background: linear-gradient(90deg, var(--light-red), var(--lavender), var(--light-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s infinite linear;
+  display: inline-block;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Section styling */
+#main section {
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  background-color: var(--section-bg);
+  color: #333;
+}
+
+/* Buttons */
+#main section a.button {
+  background-color: var(--light-red);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#main section a.button:hover {
+  background-color: #ff4d4d;
+}
+
