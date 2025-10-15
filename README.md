@@ -80,3 +80,10 @@ Feel free to reach out via any of the channels above!
 ---
 
 © 2025 Altia Gonzales Inale. All rights reserved.
+
+Deploy:
+npm run deploy
+
+## Live Demo
+View the live portfolio: [https://thealiane09.github.io/personal-portfolio/]<br>
+Gdrive Link Video: [https://drive.google.com/drive/folders/1S0LR7GL_o6FyTjyJNlznXMEQinEG6uwt?usp=sharing]
