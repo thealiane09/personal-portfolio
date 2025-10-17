@@ -110,3 +110,13 @@ Ensure you have Node.js and npm (or yarn) installed on your computer.
 - npm run deploy
 
 If using GitHub Pages, follow the official guide for deployment.
+
+
+Live Demo
+You can access the live version of your portfolio once it's deployed:
+
+GitHub Pages URL:
+[https://thealiane09.github.io/personal-portfolio/]<br>
+
+Demo Recording:
+[https://drive.google.com/file/d/1zSWIlO2cWwU2EhGv6SI7RG7DqYkXuVXO/view?usp=drivesdk]
