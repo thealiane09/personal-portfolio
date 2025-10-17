@@ -96,7 +96,7 @@ Ensure you have Node.js and npm (or yarn) installed on your computer.
 ###### Install dependencies:
 - npm install
 
-####### Start the development server:
+###### Start the development server:
 - npm run dev
 
 ###### Open your browser and visit http://localhost:5173 (usually 5173 is the default port) to view the site locally.
