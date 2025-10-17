@@ -91,7 +91,7 @@ function App() {
   <h2>Biography</h2>
   <div className="about-content">
     <div className="profile-pic-wrapper">
-      <img src="src/assets/Head.jpg" alt="Head.jpg" className="profile-pic" />
+      <img src="src\assets\Head.jpg" alt="Head.jpg" className="profile-pic" />
     </div>
     <div className="bio">
       <p>
