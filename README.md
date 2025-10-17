@@ -81,9 +81,32 @@ Feel free to reach out via any of the channels above!
 
 © 2025 Altia Gonzales Inale. All rights reserved.
 
-Deploy:
-npm run deploy
+# Setup Instructions
+To run this project locally, follow the steps below:
 
-## Live Demo
-View the live portfolio: [https://thealiane09.github.io/personal-portfolio/]<br>
-Gdrive Link Video: [https://drive.google.com/drive/folders/1S0LR7GL_o6FyTjyJNlznXMEQinEG6uwt?usp=sharing]
+ ## Prerequisites
+
+Ensure you have Node.js and npm (or yarn) installed on your computer.
+###### Installation Fork this repository to your local machine:
+- git clone https://github.com/thealiane09/personal-portfolio/
+
+###### Navigate to the project directory:
+- cd personal-portfolio
+
+###### Install dependencies:
+- npm install
+
+####### Start the development server:
+- npm run dev
+
+###### Open your browser and visit http://localhost:5173 (usually 5173 is the default port) to view the site locally.
+
+### Deployment
+
+###### To deploy your portfolio to GitHub Pages: Build the project for production:
+- npm run build
+
+###### Push the build folder to your GitHub Pages branch (usually gh-pages):
+- npm run deploy
+
+If using GitHub Pages, follow the official guide for deployment.
